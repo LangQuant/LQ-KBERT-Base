@@ -35,8 +35,8 @@ texts = [
 ]
 
 
-tokenizer = AutoTokenizer.from_pretrained(repo_or_dir, local_files_only=True)
-model = AutoModel.from_pretrained(repo_or_dir, trust_remote_code=True, local_files_only=True)
+tokenizer = AutoTokenizer.from_pretrained(repo_or_dir)
+model = AutoModel.from_pretrained(repo_or_dir, trust_remote_code=True)
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model.to(device).eval()
 
