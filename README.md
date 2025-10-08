@@ -7,7 +7,7 @@
 - [Github](https://github.com/LangQuant/LQ-KBERT-Base)
 - [Huggingface](https://huggingface.co/langquant/LQ-Kbert-base)
 ---
-### 모델은 다음 항목을 예측합니다.
+### 모델의 아웃풋은 다음과 같습니다.
 
 ```json
 {
@@ -16,7 +16,6 @@
   "emotions": ["greed","fear","confidence","doubt","anger","hope","sarcasm"],
   "certainty": 0.0 ~ 1.0,
   "relevance": 0.0 ~ 1.0,
-  "reasons": "라벨 근거를 요약한 한국어 1~2문장",
   "toxicity": 0.0 ~ 1.0
 }
 ```
